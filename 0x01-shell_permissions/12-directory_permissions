@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir my_dir,chmod 751 my_dir,chmod 700 /alx-system_engineering-devops/0x01-shell_permissions/
+mkdir my_dir,chmod 751 my_dir,chmod 700/alx-system_engineering-devops/0x01-shell_permissions/
