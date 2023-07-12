@@ -1,2 +1,2 @@
 #!/bin/bash
-$bestchl=$($WATER+$STIR))
+$bestchl=$(($WATER+$STIR))
