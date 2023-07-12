@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -f 1 -d$'\t' | sort | uniq -c | tr -s ' ' | sort -t' ' -k 1 -nr | head -11 | cut -d' ' -f3
+log_file="webserver.log"; cut -f1 -d$'\t' "$log_file" | sort | uniq -c | sort -rn | head -11
