@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# bad good bad
 count=1
 while [ $count -lt 21 ]
 do
