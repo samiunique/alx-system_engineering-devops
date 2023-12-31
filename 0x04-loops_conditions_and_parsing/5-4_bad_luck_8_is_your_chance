@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Displays "Best School" 10 times using a while loop, printing the school name after the 9th iteration.
+
+count=0
+while [ $count -lt 10 ]
+do
+	if [ $count -eq 3 ]; # Checks if the current iteration is the 9th (zero-indexed).
+	then
+		echo "bad luck"
+	elif [ $count -eq 7 ];
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	((count++))
+done
