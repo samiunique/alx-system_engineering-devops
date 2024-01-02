@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Tells a story based on the contents of the `/etc/passwd` file.
+
+while IFS=':' read -r username password uid gid info home shell; do
+    echo "In the land of Unix, there lived a user named $username."
+    echo "Part of the $gid gang, $username's dwelling was at $home,"
+    echo "Where $username would ride $shell through the realms."
+    echo "Protected by the secret passcode '$password',"
+    echo "$uid was known far and wide."
+    echo "Curious souls would find more tales about $username here: $info"
+    echo "-----------------------------"
+done < "/etc/passwd"
