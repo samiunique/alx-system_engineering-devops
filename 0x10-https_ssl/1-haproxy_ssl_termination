@@ -42,10 +42,10 @@ frontend  ollyjhay-frontend
 backend ollyjhay-backend
         balance roundrobin
         server 93511-web-01 	18.234.107.187:80 check
-        server 93511-web-0218.204.13.226:80 check
+        server 93511-web-02     18.204.13.226:80 check
 
 listen http-in
         bind :80
         balance roundrobin
         server 93511-web-01 	18.234.107.187:80 check
-        server 93511-web-0218.204.13.226:80 check
+        server 93511-web-02     18.204.13.226:80 check
