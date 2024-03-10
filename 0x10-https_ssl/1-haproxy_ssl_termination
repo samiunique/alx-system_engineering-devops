@@ -12,7 +12,7 @@ defaults
 
 frontend sam-next-afro-tech-frontend
 	bind *:80
-	bind *:443 ssl crt /etc/letsencrypt/live/www.sam-next-afro.tech/fullchain.pem
+	bind *:443 ssl crt /etc/haproxy/certs/www.sam-next-afro.tech.pem
 	http-request redirect scheme https unless { ssl_fc }
 	http-request set-header X-Forwarded-Proto https
 	default_backend sam-next-afro-tech-backend
