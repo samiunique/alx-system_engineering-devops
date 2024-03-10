@@ -1,12 +1,3 @@
-global
-    log /dev/log local0
-    log /dev/log local1 notice
-    chroot /var/lib/haproxy
-    stats socket /run/haproxy/admin.sock mode 660 level admin expose-fd listeners
-    stats timeout 30s
-    user haproxy
-    group haproxy
-    daemon
 
     # Default SSL material locations
     ca-base /etc/ssl/certs
@@ -35,19 +26,18 @@ defaults
 
 frontend sam-next-afro-frontend
     bind *:80
-    bind *:443 ssl crt /etc/haproxy/certs/www.sam-next-afro.tech.pem
+    bind *:443 ssl crt /etc/letsencrypt/live/www.sam-next-afro.tech/fullchain.pem
     redirect scheme https if !{ ssl_fc }
     mode http
     default_backend sam-next-afro-backend
 
 backend sam-next-afro-backend
     balance roundrobin
-    server 93511-web-01 18.234.107.187:80 check
-    server 93511-web-02 18.204.13.226:80 check
+    server 462818-web-01 18.234.107.187:80 check
+    server 462818-web-02 18.204.13.226:80 check
 
 listen http-in
     bind :80
     balance roundrobin
-    server 93511-web-01 18.234.107.187:80 check
-    server 93511-web-02 18.204.13.226:80 check
-
+    server 462818-web-01 18.234.107.187:80 check
+    server 462818-web-02 18.204.13.226:80 check
