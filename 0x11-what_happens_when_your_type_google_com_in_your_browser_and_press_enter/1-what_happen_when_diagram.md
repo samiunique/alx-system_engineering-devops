@@ -1,3 +1,6 @@
+
+https://medium.com/@yitesam/lets-shed-light-on-what-occurs-when-you-input-google-com-into-your-browser-and-hit-enter-778d8ea9c803
+
 Let’s shed light on “what occurs when you input ‘google.com’ into your browser and hit enter”!
 Samson Mekonnen
 Samson Mekonnen
