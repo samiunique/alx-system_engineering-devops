@@ -40,9 +40,9 @@ DNS resolution, or DNS lookup, involves four key steps and servers:
 2. Root server: Directs requests to the appropriate Top-Level Domain (TLD) server.
 3. TLD server: Manages the last portion of a hostname, such as “.com,” and forwards requests to the authoritative nameserver.
 4. Authoritative nameserver: Returns the IP address for the requested hostname or reports an error if the record is unavailable.
-<br>
+
 <a href="https://imgur.com/QxYexUN"><img src="https://i.imgur.com/QxYexUN.png?1" title="source: imgur.com" /></a>
-<br>
+
 Establishing Connection:
 Once the browser identifies the location of www.google.com, it initiates a connection to access the website. This connection is established using internet protocols, notably the Internet Protocol Suite or TCP/IP, governing data transmission over networks.
 
