@@ -43,9 +43,9 @@ DNS resolution, or DNS lookup, involves four key steps and servers:
 2. Root server: Directs requests to the appropriate Top-Level Domain (TLD) server.
 3. TLD server: Manages the last portion of a hostname, such as “.com,” and forwards requests to the authoritative nameserver.
 4. Authoritative nameserver: Returns the IP address for the requested hostname or reports an error if the record is unavailable.
-
-<a href="https://imgur.com/QxYexUN"><img src="https://i.imgur.com/QxYexUN.png?1" title="source: imgur.com" /></a>
-
+<br>
+<a href="https://imgur.com/8z6Nx4Q"><img src="https://i.imgur.com/8z6Nx4Q.png" title="source: imgur.com" /></a>
+<br>
 Establishing Connection:
 Once the browser identifies the location of www.google.com, it initiates a connection to access the website. This connection is established using internet protocols, notably the Internet Protocol Suite or TCP/IP, governing data transmission over networks.
 
@@ -61,7 +61,7 @@ We can recognize SSL-secured websites by the presence of a padlock icon and “h
 Differentiating HTTP and HTTPS:
 HTTP (HyperText Transfer Protocol) and its secure counterpart HTTPS facilitate communication between web browsers and servers. While HTTP is widely used, HTTPS incorporates SSL for enhanced security.
 <br>
-<a href="https://imgur.com/Z8penVf"><img src="https://i.imgur.com/Z8penVf.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/yQKCn1o"><img src="https://i.imgur.com/yQKCn1o.png" title="source: imgur.com" /></a>
 <br>
 Understanding HTTP Methods and Response Codes:
 HTTP requests utilize various methods, such as GET, POST, PUT, and DELETE, to interact with web servers. Response codes indicate the success or failure of these requests, categorized into informational, successful, redirection, client error, and server error responses.
@@ -72,7 +72,8 @@ Web servers deliver static content like HTML pages, images, and text files, whil
 Emphasizing the Database Role:
 Database servers manage data storage and retrieval, interacting with databases to perform operations like adding, modifying, or retrieving data. Relational and non-relational databases are commonly used for this purpose.
 <br>
-<a href="https://imgur.com/7ynbRZy"><img src="https://i.imgur.com/7ynbRZy.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/TRqTFye"><img src="https://i.imgur.com/TRqTFye.png" title="source: imgur.com" /></a>
 <br>
 In Summary:
-The process of accessing a website like www.google.com involves a series of intricate steps, from DNS resolution to data transmission and security measures. Although these processes occur swiftly, understanding them enhances our appreciation of the technology behind web browsing.
+The process of accessing a website like www.google.com involves a series of intricate steps, from DNS resolution to data transmission and security measures. Although these processes occur swiftly, understanding them enhances our appreciation of the technology behind web browsing.<br>
+<a href="https://imgur.com/SqhSD2Z"><img src="https://i.imgur.com/SqhSD2Z.png" title="source: imgur.com" /></a>
