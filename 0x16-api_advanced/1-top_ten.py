@@ -8,7 +8,7 @@ import requests
 def top_ten(subreddit):
     """ Function that GETs subreddit top 10 hot posts """
     url = "https://www.reddit.com/r/{}/hot.json?limit=10".format(subreddit)
-    headers = {'user-agent': 'bruka request'}
+    headers = {'user-agent': 'sam_super request'}
     req = requests.get(url, headers=headers)
     if (req.status_code == 404):
         print("None")

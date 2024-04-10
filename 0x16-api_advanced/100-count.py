@@ -19,7 +19,7 @@ def count_words(subreddit, word_list, after='', word_count={}):
     :param word_count: A dictionary to store the count of each keyword
     """
     url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=100&after={after}"
-    headers = {"User-Agent": "bruka request"}
+    headers = {"User-Agent": "sam_super request"}
 
     subreddit_info = requests.get(url, headers=headers, allow_redirects=False)
 
