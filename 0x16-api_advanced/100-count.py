@@ -18,7 +18,10 @@ def count_words(subreddit, word_list, after='', word_count={}):
     :param after: The id of the last post in the current listing
     :param word_count: A dictionary to store the count of each keyword
     """
-    url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=100&after={after}"
+    url = (
+            f"https://www.reddit.com/r/{subreddit}/hot.json"
+            f"?limit=100&after={after}"
+            )
     headers = {"User-Agent": "sam_super request"}
 
     subreddit_info = requests.get(url, headers=headers, allow_redirects=False)
@@ -38,7 +41,10 @@ def count_words(subreddit, word_list, after='', word_count={}):
             if after:
                 return count_words(subreddit, word_list, after, word_count)
             else:
-                sorted_word_count = sorted(word_count.items(), key=lambda x: (-x[1], x[0]))
+                sorted_word_count = sorted(
+                        word_count.items(),
+                        key=lambda x: (-x[1], x[0])
+                        )
                 for word, count in sorted_word_count:
                     print(f"{word}: {count}")
         else:
